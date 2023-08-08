@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/home/miram/cours_python/la-formation-complete-python/prj-005_le-jeu-de-role/02-solution'
+let g:netrw_dirhist_3='/home/miram/cours_python/la-formation-complete-python/prj-005_le-jeu-de-role'
+let g:netrw_dirhist_2='/home/miram/cours_python/la-formation-complete-python'
+let g:netrw_dirhist_1='/home/miram/cours_python/la-formation-complete-python/prj-005_le-jeu-de-role'
+let g:netrw_dirhist_0='/home/miram/cours_python/la-formation-complete-python/prj-005_le-jeu-de-role/01-sources'
+let g:netrw_dirhist_9='/home/miram/cours_python/la-formation-complete-python/prj-005_le-jeu-de-role'
+let g:netrw_dirhist_8='/home/miram/cours_python/la-formation-complete-python'
+let g:netrw_dirhist_7='/home/miram/cours_python/la-formation-complete-python/app-001_convertisseur-devises'
+let g:netrw_dirhist_6='/home/miram/cours_python/la-formation-complete-python/app-001_convertisseur-devises/Session 192'
+let g:netrw_dirhist_5='/home/miram/cours_python/la-formation-complete-python/prj-012_le-gestionnaire-dutilisateurs-poo'
