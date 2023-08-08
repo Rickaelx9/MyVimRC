@@ -41,6 +41,20 @@ vnoremap <Space> @
 vnoremap p "_dP
 set ts=4
 if has('persistent_undo')      "check if your vim version supports it
-  set undofile                 "turn on the feature  
-  set undodir=$HOME/.vim/undo  "directory where the undo files will be stored
-  endif 
+	set undofile                 "turn on the feature  
+	set undodir=$HOME/.vim/undo  "directory where the undo files will be stored
+endif 
+
+" Enable folding
+set foldmethod=indent
+set foldlevel=99
+
+au BufNewFile,BufRead *.py
+    \ set tabstop=4 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
+    \ set textwidth=79 |
+    \ set expandtab |
+    \ set autoindent |
+    \ set fileformat=unix
+
