@@ -19,6 +19,8 @@ Plugin 'vim-syntastic/syntastic'
 Plugin 'nvie/vim-flake8'
 Plugin 'jnurmine/Zenburn'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'scrooloose/nerdtree'
+Plugin 'kien/ctrlp.vim'
 " ...
 
 " All of your Plugins must be added before the following line
@@ -69,7 +71,7 @@ highlight BadWhitespace ctermbg=red guibg=darkred
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 let g:ycm_autoclose_preview_window_after_completion=1
-map gt  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+map gd  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 let python_highlight_all=1
 syntax on
