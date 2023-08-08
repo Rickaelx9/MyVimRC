@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/miram/.vim'
+let g:netrw_dirhist_2='/home/miram/rpi_boot/u-boot/include/configs'
+let g:netrw_dirhist_1='/home/miram/rpi_boot/u-boot/include/config'
+let g:netrw_dirhist_0='/home/miram/rpi_boot/u-boot/include/config/arch'
+let g:netrw_dirhist_9='/home/miram/rpi_boot/u-boot/include/config/arch/cpu'
+let g:netrw_dirhist_8='/home/miram/rpi_boot/u-boot/include/config/arch'
+let g:netrw_dirhist_7='/home/miram/rpi_boot/u-boot/include/config'
+let g:netrw_dirhist_6='/home/miram/rpi_boot/u-boot/include/config/arm'
+let g:netrw_dirhist_5='/home/miram/rpi_boot/u-boot/include/config'
+let g:netrw_dirhist_4='/home/miram/rpi_boot/u-boot/include/config/arm64'
