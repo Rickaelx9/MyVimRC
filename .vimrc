@@ -29,9 +29,19 @@ set spr
 set autoindent
 set path+=**
 set clipboard=unnamedplus
+set nocompatible
+set ts=4
+set encoding=utf-8
+" Enable folding
+set foldmethod=indent
+set foldlevel=99
+if has('persistent_undo')      "check if your vim version supports it
+	set undofile                 "turn on the feature  
+	set undodir=$HOME/.vim/undo  "directory where the undo files will be stored
+endif 
+
 imap jj <Esc>
 map tt <C-]>
-set nocompatible
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
@@ -40,15 +50,7 @@ tnoremap <Esc><Esc> <C-\><C-N>
 nnoremap <Space> @
 vnoremap <Space> @
 vnoremap p "_dP
-set ts=4
-if has('persistent_undo')      "check if your vim version supports it
-	set undofile                 "turn on the feature  
-	set undodir=$HOME/.vim/undo  "directory where the undo files will be stored
-endif 
 
-" Enable folding
-set foldmethod=indent
-set foldlevel=99
 
 au BufNewFile,BufRead *.py
     \ set tabstop=4 |
@@ -58,4 +60,7 @@ au BufNewFile,BufRead *.py
     \ set expandtab |
     \ set autoindent |
     \ set fileformat=unix
+
+highlight BadWhitespace ctermbg=red guibg=darkred
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
