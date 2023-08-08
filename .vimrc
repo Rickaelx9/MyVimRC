@@ -14,6 +14,7 @@ Plugin 'gmarik/Vundle.vim'
 " add all your plugins here (note older versions of Vundle
 " used Bundle instead of Plugin)
 Plugin 'vim-scripts/indentpython.vim'
+Bundle 'Valloric/YouCompleteMe'
 
 " ...
 
@@ -64,3 +65,5 @@ au BufNewFile,BufRead *.py
 highlight BadWhitespace ctermbg=red guibg=darkred
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
+let g:ycm_autoclose_preview_window_after_completion=1
+map gt  :YcmCompleter GoToDefinitionElseDeclaration<CR>
