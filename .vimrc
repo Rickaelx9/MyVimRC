@@ -36,13 +36,14 @@ set nowrap
 set spr
 set autoindent
 set path+=**
-set clipboard=unnamedplus
+"set clipboard=unnamedplus
 set nocompatible
 set ts=4
 set encoding=utf-8
 " Enable folding
 set foldmethod=indent
 set foldlevel=99
+set splitbelow
 if has('persistent_undo')      "check if your vim version supports it
 	set undofile                 "turn on the feature  
 	set undodir=$HOME/.vim/undo  "directory where the undo files will be stored
@@ -57,7 +58,7 @@ nnoremap <C-H> <C-W><C-H>
 tnoremap <Esc><Esc> <C-\><C-N>
 nnoremap <Space> @
 vnoremap <Space> @
-vnoremap p "_dP
+"vnoremap p "_dP
 
 
 au BufNewFile,BufRead *.py
