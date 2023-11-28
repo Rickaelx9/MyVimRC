@@ -9,12 +9,11 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 
 " add all your plugins here (note older versions of Vundle
 " used Bundle instead of Plugin)
 Plugin 'vim-scripts/indentpython.vim'
-Plugin 'ymc-core/YouCompleteMe'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'nvie/vim-flake8'
 Plugin 'jnurmine/Zenburn'
@@ -29,6 +28,7 @@ Plugin 'vim-python/python-syntax'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+set backspace=indent,eol,start
 set mouse=a
 set number
 set laststatus=2
